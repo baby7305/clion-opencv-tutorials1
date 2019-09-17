@@ -10,8 +10,10 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 add_executable(clion_opencv_app main.cpp)
 add_executable(example_11-01 example_11-01.cpp)
 add_executable(example_11-02 example_11-02.cpp)
+add_executable(example_11-03 example_11-03.cpp)
 
 
 target_link_libraries(clion_opencv_app ${OpenCV_LIBS})
 target_link_libraries(example_11-01 ${OpenCV_LIBS})
 target_link_libraries(example_11-02 ${OpenCV_LIBS})
+target_link_libraries(example_11-03 ${OpenCV_LIBS})
