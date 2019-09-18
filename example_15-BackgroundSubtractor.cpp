@@ -62,7 +62,7 @@ int main() {
 
     //create Background Subtractor objects
     pMOG2 = createBackgroundSubtractorMOG2(); //MOG2 approach
-     if (strcmp("-img", "-img") == 0) {
+    if (strcmp("-img", "-img") == 0) {
         //input data coming from a sequence of images
         processImages(number_to_train_on);
     } else {
@@ -143,7 +143,8 @@ void processImages(int train) {
     frame = imread("C:\\opencv\\Learning-OpenCV-3_examples-master//shape_sample//1.png");
     if (frame.empty()) {
         //error in opening the first image
-        cerr << "Unable to open first image frame: " << "C:\\opencv\\Learning-OpenCV-3_examples-master//shape_sample//1.png"
+        cerr << "Unable to open first image frame: "
+             << "C:\\opencv\\Learning-OpenCV-3_examples-master//shape_sample//1.png"
              << endl;
         exit(EXIT_FAILURE);
     }
