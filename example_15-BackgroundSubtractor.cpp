@@ -62,7 +62,10 @@ int main() {
 
     //create Background Subtractor objects
     pMOG2 = createBackgroundSubtractorMOG2(); //MOG2 approach
-    if (strcmp("-img", "-img") == 0) {
+    if (strcmp("-vid", "-vid") == 0) {
+        //input data coming from a video
+        processVideo(number_to_train_on);
+    } else if (strcmp("-img", "-img") == 0) {
         //input data coming from a sequence of images
         processImages(number_to_train_on);
     } else {
