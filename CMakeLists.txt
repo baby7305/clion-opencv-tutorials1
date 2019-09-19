@@ -11,9 +11,11 @@ add_executable(clion_opencv_app main.cpp)
 add_executable(example_19-01 example_19-01.cpp)
 add_executable(example_19-02 example_19-02.cpp)
 add_executable(example_19-03 example_19-03.cpp)
+add_executable(example_19-04 example_19-04.cpp)
 
 
 target_link_libraries(clion_opencv_app ${OpenCV_LIBS})
 target_link_libraries(example_19-01 ${OpenCV_LIBS})
 target_link_libraries(example_19-02 ${OpenCV_LIBS})
 target_link_libraries(example_19-03 ${OpenCV_LIBS})
+target_link_libraries(example_19-04 ${OpenCV_LIBS})
