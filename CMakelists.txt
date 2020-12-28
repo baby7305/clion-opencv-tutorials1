@@ -15,13 +15,15 @@ find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_executable(helloworld
-    mainwindow.ui
-    mainwindow.cpp
     main.cpp
-    resources.qrc
 )
 
 target_link_libraries(helloworld
         PRIVATE Qt6::Widgets
         PRIVATE ${OpenCV_LIBS}
         )
+
+SET(IMAGES ${CMAKE_SOURCE_DIR}/lianggongchunri_de_youyv-009.jpg)
+FILE(COPY ${IMAGES} DESTINATION .)
+FILE(COPY ${IMAGES} DESTINATION "Debug")
+FILE(COPY ${IMAGES} DESTINATION "Release")
