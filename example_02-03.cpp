@@ -6,7 +6,7 @@
 using namespace std;
 using namespace cv;
 
-int main(int argc, char **argv) {
+int main() {
 
     namedWindow("Example 2-3", cv::WINDOW_AUTOSIZE);
     VideoCapture cap;
