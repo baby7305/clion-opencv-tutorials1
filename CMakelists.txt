@@ -32,6 +32,9 @@ add_executable(example_02-06
 add_executable(example_02-07
         example_02-07.cpp
         )
+add_executable(example_02-08
+        example_02-08.cpp
+        )
 
 target_link_libraries(example_02-01
         PRIVATE Qt6::Widgets
@@ -54,6 +57,10 @@ target_link_libraries(example_02-06
         PRIVATE ${OpenCV_LIBS}
         )
 target_link_libraries(example_02-07
+        PRIVATE Qt6::Widgets
+        PRIVATE ${OpenCV_LIBS}
+        )
+target_link_libraries(example_02-08
         PRIVATE Qt6::Widgets
         PRIVATE ${OpenCV_LIBS}
         )
