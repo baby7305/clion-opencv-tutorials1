@@ -1,0 +1,16 @@
+{
+    "configurations": [
+      {
+        "name": "x64-Debug (默认值)",
+        "generator": "Ninja",
+        "configurationType": "Debug",
+        "inheritEnvironments": [ "msvc_x64_x64" ],
+        "buildRoot": "${projectDir}\\out\\build\\${name}",
+        "installRoot": "${projectDir}\\out\\install\\${name}",
+        "cmakeCommandArgs": "-DCMAKE_PREFIX_PATH=C:\\Qt\\6.0.0\\msvc2019_64;C:\\opencv3d4d12\\opencv\\build",
+        "buildCommandArgs": "",
+        "ctestCommandArgs": "",
+        "variables": []
+      }
+    ]
+  }
