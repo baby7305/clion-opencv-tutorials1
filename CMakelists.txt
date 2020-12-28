@@ -10,6 +10,9 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
 find_package(Qt6 COMPONENTS Widgets REQUIRED)
+find_package(OpenCV REQUIRED)
+
+include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_executable(helloworld
     mainwindow.ui
@@ -18,4 +21,7 @@ add_executable(helloworld
     resources.qrc
 )
 
-target_link_libraries(helloworld PRIVATE Qt6::Widgets)
+target_link_libraries(helloworld
+        PRIVATE Qt6::Widgets
+        PRIVATE ${OpenCV_LIBS}
+        )
