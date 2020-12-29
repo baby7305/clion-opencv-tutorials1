@@ -15,8 +15,10 @@ find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_executable(example_05-01 example_05-01.cpp)
+add_executable(Exercises_5 Exercises_5.cpp)
 
 target_link_libraries(example_05-01 ${OpenCV_LIBS})
+target_link_libraries(Exercises_5 ${OpenCV_LIBS})
 
 SET(IMAGES
         ${CMAKE_SOURCE_DIR}/faceTemplate.jpg
