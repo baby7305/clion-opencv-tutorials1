@@ -101,7 +101,7 @@ int main() {
     /************************************************************************/
     Mat clone1, clone2;
     vector<cv::Mat> bgr_planes;
-    Mat src = cv::imread("C:\\opencv\\Learning-OpenCV-3_examples-master//faces.png");
+    Mat src = cv::imread("faces.png");
     split(src, bgr_planes);
     // a
     Mat green = bgr_planes[1];
