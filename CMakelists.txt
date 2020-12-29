@@ -14,14 +14,12 @@ find_package(OpenCV REQUIRED)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(helloworld
-    mainwindow.ui
-    mainwindow.cpp
-    main.cpp
-    resources.qrc
-)
+add_executable(example_08-01 example_08-01.cpp)
 
-target_link_libraries(helloworld
-        PRIVATE Qt6::Widgets
-        PRIVATE ${OpenCV_LIBS}
-        )
+target_link_libraries(example_08-01 ${OpenCV_LIBS})
+
+SET(IMAGES ${CMAKE_SOURCE_DIR}/tree.avi)
+
+FILE(COPY ${IMAGES} DESTINATION .)
+FILE(COPY ${IMAGES} DESTINATION "Debug")
+FILE(COPY ${IMAGES} DESTINATION "Release")
