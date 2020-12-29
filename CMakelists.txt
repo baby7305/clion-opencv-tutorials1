@@ -14,14 +14,6 @@ find_package(OpenCV REQUIRED)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(helloworld
-    mainwindow.ui
-    mainwindow.cpp
-    main.cpp
-    resources.qrc
-)
+add_executable(example_04-01 example_04-01.cpp)
 
-target_link_libraries(helloworld
-        PRIVATE Qt6::Widgets
-        PRIVATE ${OpenCV_LIBS}
-        )
+target_link_libraries(example_04-01 PRIVATE ${OpenCV_LIBS})
