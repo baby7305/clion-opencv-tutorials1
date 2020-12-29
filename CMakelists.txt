@@ -14,14 +14,15 @@ find_package(OpenCV REQUIRED)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(helloworld
-    mainwindow.ui
-    mainwindow.cpp
-    main.cpp
-    resources.qrc
+add_executable(example_05-01 example_05-01.cpp)
+
+target_link_libraries(example_05-01 ${OpenCV_LIBS})
+
+SET(IMAGES
+        ${CMAKE_SOURCE_DIR}/faceTemplate.jpg
+        ${CMAKE_SOURCE_DIR}/faces.png
 )
 
-target_link_libraries(helloworld
-        PRIVATE Qt6::Widgets
-        PRIVATE ${OpenCV_LIBS}
-        )
+FILE(COPY ${IMAGES} DESTINATION .)
+FILE(COPY ${IMAGES} DESTINATION "Debug")
+FILE(COPY ${IMAGES} DESTINATION "Release")
