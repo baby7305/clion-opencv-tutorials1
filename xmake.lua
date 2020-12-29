@@ -7,6 +7,7 @@ target("clion-opencv-tutorials1")
     add_rules("qt.console","qt.qrc")
     add_files("*.cpp")
     add_packages("opencv3d4d12")
+    add_files("res.qrc")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
