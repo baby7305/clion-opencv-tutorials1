@@ -27,6 +27,7 @@ target_link_libraries(example_09-04 ${OpenCV_LIBS})
 SET(IMAGES
         ${CMAKE_SOURCE_DIR}/fruits.jpg
         ${CMAKE_SOURCE_DIR}/tree.avi
+        ${CMAKE_SOURCE_DIR}/lena.jpg
 )
 
 FILE(COPY ${IMAGES} DESTINATION .)
