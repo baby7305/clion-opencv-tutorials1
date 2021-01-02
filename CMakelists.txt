@@ -18,11 +18,17 @@ add_executable(example_09-01 example_09-01.cpp)
 add_executable(example_09-02 example_09-02.cpp)
 add_executable(example_09-03 example_09-03.cpp)
 add_executable(example_09-04 example_09-04.cpp)
+add_executable(Exercises_9_1-2-10-11-12-15-16 Exercises_9_1-2-10-11-12-15-16.cpp)
+add_executable(Exercises_9_4 Exercises_9_4.cpp)
+add_executable(Exercises_9_5 Exercises_9_5.cpp)
 
 target_link_libraries(example_09-01 ${OpenCV_LIBS})
 target_link_libraries(example_09-02 ${OpenCV_LIBS})
 target_link_libraries(example_09-03 ${OpenCV_LIBS})
 target_link_libraries(example_09-04 ${OpenCV_LIBS})
+target_link_libraries(Exercises_9_1-2-10-11-12-15-16 ${OpenCV_LIBS})
+target_link_libraries(Exercises_9_4 ${OpenCV_LIBS})
+target_link_libraries(Exercises_9_5 ${OpenCV_LIBS})
 
 SET(IMAGES
         ${CMAKE_SOURCE_DIR}/fruits.jpg
